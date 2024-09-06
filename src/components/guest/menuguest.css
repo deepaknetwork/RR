@@ -1,0 +1,41 @@
+.offcanvas {
+    width: 18% !important;
+}
+
+.main1 {
+    display: flex;
+    align-items: center;
+}
+
+.iconimg {
+    height: 5%;
+    width: 5%;
+}
+
+.mainicon {
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+}
+
+.signa {
+    text-decoration: none;
+    text-align: center;
+}
+
+.logoutbutton {
+    width: max-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navname {
+    min-width: fit-content;
+}
+
+@media screen and (max-width:480px) {
+    .offcanvas {
+        width: 25vh !important;
+    }
+
+}

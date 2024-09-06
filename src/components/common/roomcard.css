@@ -1,0 +1,61 @@
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 2%;
+}
+
+.img {
+    height: 25vh;
+    width: 40vh;
+}
+
+.cardd {
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+}
+
+.cardd:hover {
+    scale: 1.04;
+    background-color: rgb(234, 234, 234);
+}
+
+.resbtnroom {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.346);
+    padding: 1vh;
+    border-radius: 10px;
+    color: white;
+}
+
+.resbtnroom:hover {
+    background-color: black;
+
+}
+
+.roomcardtext {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.cardaddressdiv {
+    display: flex;
+    width: 100%;
+    padding: 1vh;
+    padding-left: 0;
+
+}
+
+.cardaddress {
+    color: rgba(0, 0, 0, 0.325);
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:480px) {
+    .cardd {
+        width: auto !important;
+        padding: 1vh !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+}

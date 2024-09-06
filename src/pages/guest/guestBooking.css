@@ -1,0 +1,23 @@
+.guestbookmain {
+    height: 100vh;
+}
+
+.guestbookmainbody {
+    display: flex;
+    justify-content: space-around;
+    height: 88vh;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1vh;
+    gap: 1vh;
+    margin: 0 !important;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:480px) {
+    .guestbookmainbody {
+        justify-content: center;
+        align-items: center;
+
+    }
+}

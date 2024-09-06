@@ -1,0 +1,98 @@
+.room {
+    height: 100vh;
+}
+
+.roomdiv {
+    display: flex;
+    margin: 0;
+    height: 88vh;
+    overflow-y: scroll;
+}
+
+.roomdiv::-webkit-scrollbar {
+    display: none;
+}
+
+.leftroom {
+    height: 88vh;
+    overflow-y: scroll;
+}
+
+.leftroom::-webkit-scrollbar {
+    display: none;
+}
+
+.rigthroom {
+    padding-top: 2vh;
+
+}
+
+.rightbox {
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: column;
+    height: 80vh;
+    gap: 4vh;
+    padding-top: 3vh;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.rightbox::-webkit-scrollbar {
+    width: 3px;
+}
+
+.rightbox::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.352);
+    border-radius: 20px;
+}
+
+.heading {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.signinbox {
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+    padding-top: 6vh;
+}
+
+.signindiv {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(201, 0, 0, 0.63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 1vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    background-color: rgba(0, 0, 0, 0.256);
+}
+
+.signintext {
+    font-size: 1.3em;
+}
+
+@media screen and (max-width:480px) {
+    .rigthroom {
+        border: 1px black solid;
+        height: auto;
+        width: 50vh;
+    }
+
+    .rightbox {
+        flex-direction: row;
+        gap: 1vh;
+        overflow-y: scroll;
+        height: auto;
+        padding-top: 1vh;
+    }
+
+    .rightbox::-webkit-scrollbar {
+        height: 5px;
+    }
+}

@@ -1,0 +1,29 @@
+.main1 {
+    display: flex;
+}
+
+.iconimg {
+    height: 5%;
+    width: 5%;
+}
+
+.mainicon {
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+}
+
+.signa {
+    text-decoration: none;
+    text-align: center;
+}
+
+.logoutbutton {
+    width: max-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navname {
+    min-width: max-content;
+}

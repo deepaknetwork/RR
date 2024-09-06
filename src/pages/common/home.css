@@ -1,0 +1,36 @@
+.body {
+    height: 100vh;
+}
+
+.main1 {
+    display: flex;
+    gap: 5vh;
+}
+
+.homebody1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 3vh;
+    margin: 0;
+    height: 88vh !important;
+    overflow-y: scroll;
+    padding: 3vh;
+    padding-top: 1vh !important;
+    scroll-behavior: smooth;
+    margin-right: 4px;
+}
+
+.homebody1::-webkit-scrollbar {
+    width: 3px;
+}
+
+.homebody1::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.352);
+    border-radius: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .homebody {
+        padding: 0 !important;
+    }
+}

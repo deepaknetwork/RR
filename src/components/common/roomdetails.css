@@ -1,0 +1,75 @@
+.details {
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    padding-left: 10vh;
+}
+
+.roomown {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rentvalue {
+    font-size: 3em;
+}
+
+.price1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(0, 0, 0, 0.256);
+    width: auto;
+    color: rgb(255, 255, 255);
+    border-radius: 10px 50px 10px 20px;
+    text-shadow: rgba(0, 0, 0, 0.353) 3px 3px 1px;
+}
+
+.headings {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.43);
+    text-shadow: rgba(0, 0, 0, 0.114) 3px 3px 1px;
+
+}
+
+.label {
+    font-size: 1.3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.value {
+    font-size: 1.4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.condiv {
+    padding-left: 7%;
+}
+
+@media screen and (max-width:480px) {
+    .details {
+        padding-left: 0;
+    }
+
+    .rentvalue {
+        font-size: 1.7em;
+    }
+
+    .pricehead {
+        display: flex;
+        padding: 1vh;
+    }
+
+    .price1 {
+        padding: 1vh 2vh 1vh 2vh;
+    }
+
+    .headings {
+        font-size: 1.5em;
+    }
+
+    .roomown {
+        margin-top: 4vh;
+    }
+
+}

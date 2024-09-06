@@ -1,0 +1,94 @@
+.cardh {
+    height: fit-content;
+    position: relative;
+}
+
+.homedlt {
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    margin-top: 3%;
+    transition: all 0.2s ease-in;
+}
+
+.homedlt:hover {
+    scale: 1.1;
+}
+
+.roomcol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    justify-content: center;
+}
+
+.cardbtn>button {
+    width: fit-content;
+}
+
+.viewarr {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.viewhovered {
+    transform: translateX(-20px);
+    scale: 1.3;
+}
+
+.gray {
+    color: rgb(144, 144, 144);
+}
+
+.roomops {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.roomadd {
+    scale: 1.1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.roomadd:hover {
+    scale: 1.2;
+}
+
+.dltopsdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dltcon {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.dltopsicon {
+    transition: all 0.2s ease-in-out;
+}
+
+.dltopsicon:hover {
+    scale: 1.2;
+}
+
+@media screen and (max-width:480px) {
+    .cardh {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+}

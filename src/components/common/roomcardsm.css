@@ -1,0 +1,43 @@
+.prices {
+    display: flex;
+    align-items: baseline;
+    gap: 2%;
+}
+
+.imgs {
+    padding: 1vh;
+}
+
+.btnn {
+    background-color: rgb(197, 197, 197);
+    border: 0;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.btnn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.card1s {
+    transition: all 0.3s ease-in-out;
+    /* width: 30vh; */
+
+}
+
+/* .card1:hover{
+    scale: 1.04;
+    background-color: rgb(234, 234, 234);
+} */
+
+@media screen and (max-width:480px) {
+    .card1s {
+        width: 20vh !important;
+
+    }
+
+    .imgs {
+        height: 10vh;
+        width: 20vh;
+    }
+}

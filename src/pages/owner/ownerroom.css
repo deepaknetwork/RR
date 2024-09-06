@@ -1,0 +1,261 @@
+.editroomheadings {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.43);
+    text-shadow: rgba(0, 0, 0, 0.114) 3px 3px 1px;
+
+}
+
+.savebtn {
+    width: fit-content;
+}
+
+.savediv {
+    display: flex;
+    justify-content: center;
+}
+
+.nochange {
+    background-color: rgb(237, 237, 237);
+    border: none;
+    color: black;
+
+}
+
+.canchange {
+    background-color: rgb(237, 237, 237);
+    border: none;
+    border-bottom: black 1px solid;
+}
+
+.amenitydlt {
+    scale: 0.8;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+.editroomrow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.editroomrowtitle {
+    font-size: 1.5em;
+    padding-left: 20%;
+    color: rgb(135, 135, 135);
+}
+
+.editroomrowvalue {
+    padding-left: 40%;
+    font-size: 2.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.editroombasic {
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+    padding-top: 1%;
+    gap: 3vh;
+}
+
+.editroomamenities {
+    display: flex;
+    flex-direction: column;
+}
+
+.editroomamenitiesroom {
+    display: flex;
+    gap: 2vh;
+    padding-top: 2vh;
+    padding-left: 5%;
+    /* padding-right: 5%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.editroomsubheadings {
+    font-size: 1.5em;
+}
+
+.editroomamenitiescard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    padding: 1%;
+    width: 100%;
+}
+
+.editroombody {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.editroombody::-webkit-scrollbar {
+    display: none;
+}
+
+.editroomimages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.editroomimgdiv {
+    display: flex;
+    height: max-content;
+    width: max-content;
+    position: relative;
+    justify-content: end;
+}
+
+.imgdlt {
+    position: absolute;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.deletetext {
+    position: absolute;
+    margin-right: 25%;
+    margin-top: 20%;
+    font-weight: 600;
+}
+
+.back1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgdlt:hover {
+    scale: 1.5;
+}
+
+.editroomimg {
+    height: 30vh;
+    width: 50vh;
+}
+
+.editroomimagesdiv {
+    padding: 2vh;
+    display: flex;
+    gap: 5vh;
+    overflow-x: scroll;
+    align-items: center;
+}
+
+.editroomimagesdiv::-webkit-scrollbar {
+    height: 3px;
+}
+
+.editroomimagesdiv::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.352);
+    border-radius: 20px;
+}
+
+.editroomamenitiesvalue {
+    display: flex;
+    justify-content: center;
+}
+
+.editroomuploadtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../../public/images/upload.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: black 1px solid;
+    height: 30vh;
+    position: relative;
+    border-radius: 10%;
+}
+
+.choosefile {
+    background-color: #084cdf;
+    opacity: 0;
+    width: 100%;
+    height: 30vh;
+    cursor: pointer;
+}
+
+.uploadtext {
+    margin-top: 20vh;
+    position: absolute;
+}
+
+.back {
+    color: #4e7ad8;
+    font-size: 2em;
+}
+
+
+
+.subheadingedit {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+
+}
+
+.editroomicon {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.editroomicon:hover {
+    scale: 1.5;
+}
+
+.bookingroom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 !important;
+    gap: 2vh;
+    padding-top: 2vh;
+}
+
+.editroomearn {
+    margin-top: 3vh;
+}
+
+@media screen and (max-width:480px) {
+    .editroomrow {
+        width: 100%;
+    }
+
+    .editroomimg {
+        height: 30vh;
+        width: 50vh;
+    }
+
+    .uploadtext {
+        margin-top: 13vh;
+        position: absolute;
+    }
+
+    .editroomuploadtag {
+        height: 20vh;
+    }
+
+    .amenitydlt {
+        scale: 2;
+
+    }
+}

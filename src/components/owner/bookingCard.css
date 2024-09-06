@@ -1,0 +1,108 @@
+.bookcard {
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    padding: 1vh 2vh 1vh 2vh;
+    height: max-content;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.book1 {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0vh 2vh 0vh 2vh; */
+    margin: 0 !important;
+}
+
+.bookdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.book1lab {
+    font-size: 0.8em;
+    color: rgb(135, 135, 135);
+}
+
+.book1val {
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.683);
+}
+
+.book1valadd {
+    font-size: 1.2em;
+}
+
+.book2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.book2lab {
+    font-size: 0.7em;
+    color: rgb(135, 135, 135);
+}
+
+.book2val {
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.683);
+}
+
+.bookcard:hover {
+    scale: 1.03;
+}
+
+.bookingbody {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+
+}
+
+.bookingdiv {
+    background-color: rgba(12, 12, 12, 0.28);
+    padding: 1%;
+    padding-left: 5%;
+    border-radius: 10px;
+}
+
+.bookingdivview {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.162);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.viewroom {
+    width: fit-content;
+}
+
+.bookedval {
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+
+.bookedlab {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.328);
+}
+
+@media screen and (max-width:480px) {
+    .book1val {
+        font-size: 2em;
+    }
+
+    .book2val {
+        font-size: 0.8em;
+    }
+
+    .bookingdiv {
+        padding: 5%;
+    }
+
+    .bookcard {
+        padding: 2vh 1vh 2vh 1vh;
+    }
+}

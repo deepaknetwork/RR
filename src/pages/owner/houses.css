@@ -1,0 +1,69 @@
+.body {
+    height: 100vh;
+}
+
+.homebody {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3vh;
+    margin: 0;
+    height: 90vh;
+    overflow-y: scroll;
+    padding: 3vh;
+    scroll-behavior: smooth;
+}
+
+.homebody::-webkit-scrollbar {
+    width: 5px;
+}
+
+.homebody::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.27);
+    border-radius: 10px;
+}
+
+.addbody {
+    display: flex;
+}
+
+.addhomeimg {
+    width: 100%;
+}
+
+.hbtn {
+    background-color: black;
+    color: white;
+    padding: 1vh 2vh 1vh 2vh;
+    border: 0;
+    border-radius: 10px;
+}
+
+.hbtn:hover {
+    background-color: rgba(0, 0, 0, 0.262);
+    color: white;
+}
+
+@media screen and (min-width: 780px) {
+    .addhomeimg {
+        width: 100%;
+        height: 85vh;
+    }
+
+    .addbody {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .addbody {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .homebody {
+        padding: 2vh !important;
+    }
+}

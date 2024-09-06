@@ -1,0 +1,356 @@
+.profileg {
+    height: 100vh;
+    width: 100%;
+}
+
+.profilegbodyo {
+    max-height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 4vh;
+    padding-top: 5vh !important;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.profilegbodyo::-webkit-scrollbar {
+    width: 6px;
+}
+
+.profilegbodyo::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: 10px;
+}
+
+.detdiv {
+    border: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.profileg1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(237, 237, 237, 0.12);
+    border-radius: 10px;
+    padding: 1%;
+    height: fit-content;
+    border: 2px solid rgba(0, 247, 255, 0.155);
+    animation: borderclr infinite 8s;
+    transition: all 2s ease;
+}
+
+.nobr {
+    border: none;
+}
+
+.c1 {
+    background-color: rgba(0, 247, 255, 0.155);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    animation: walletngclr infinite 8s;
+    transition: all 2s ease;
+}
+
+@keyframes borderclr {
+    10% {
+        border-color: rgba(0, 247, 255, 0.155);
+    }
+
+    35% {
+        border-color: rgba(0, 133, 137, 0.332);
+    }
+
+    50% {
+        border-color: rgba(0, 0, 0, 0.544);
+    }
+
+    65% {
+        border-color: rgba(0, 0, 0, 0.825);
+    }
+
+    85% {
+        border-color: rgba(0, 133, 137, 0.332);
+    }
+
+    100% {
+        border-color: rgba(0, 247, 255, 0.155);
+    }
+}
+
+@keyframes walletngclr {
+    10% {
+        background-color: rgba(0, 247, 255, 0.155);
+        color: black;
+    }
+
+    35% {
+        background-color: rgba(0, 133, 137, 0.332);
+        color: rgba(130, 130, 130, 0.842);
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.544);
+        color: rgb(255, 255, 255);
+    }
+
+    65% {
+        background-color: rgba(0, 0, 0, 0.825);
+        color: rgb(185, 185, 185);
+    }
+
+    85% {
+        background-color: rgba(0, 133, 137, 0.332);
+        color: rgb(106, 106, 106);
+    }
+
+    100% {
+        background-color: rgba(0, 247, 255, 0.155);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.rs {
+    display: flex;
+    align-items: center;
+}
+
+.profileg2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10vh;
+    height: fit-content;
+
+}
+
+.profileg4 {
+    display: flex;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+.profileg3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(169, 158, 237, 0.175);
+    border-radius: 10px;
+    padding: 1%;
+    height: fit-content;
+}
+
+.c3 {
+    background-color: rgba(217, 163, 239, 0.169);
+}
+
+.topup {
+    background-color: rgba(0, 247, 255, 0.155);
+    border: 0;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.2s ease;
+}
+
+.cp {
+    background-color: rgba(4, 0, 255, 0.155);
+    border: 0;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.2s ease;
+}
+
+.cp:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(138, 136, 236);
+    scale: 1.1;
+}
+
+.topup:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 247, 255);
+    scale: 1.1;
+}
+
+.profileg1lab {
+    font-size: 1.2em;
+    padding-left: 20%;
+    color: rgb(135, 135, 135);
+}
+
+.profileg1val {
+    padding-left: 40%;
+    font-size: 1.2em;
+    min-width: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ballab {
+    font-size: 1.6em;
+}
+
+.balval {
+    font-size: 2.4em;
+}
+
+.eval {
+    padding-left: 10%;
+}
+
+
+.m1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.m11 {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.condates {
+    display: flex;
+    flex-direction: column;
+}
+
+.model {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.modelhead {
+    font-size: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lab {
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.val {
+    font-size: 1.1em;
+}
+
+.modelbtndiv {
+    display: flex;
+    justify-content: center;
+}
+
+.modelbtn {
+    border: none;
+    padding: 1vh 2vh 1vh 2vh;
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.modelbtn:hover {
+    scale: 1.2;
+    background-color: black;
+}
+
+.modelicon {
+    height: 40px;
+    width: 40px;
+}
+
+.modeldiv {
+    margin-top: 10%;
+}
+
+.m2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.m2e {
+    height: fit-content;
+}
+
+.m2etext {
+    color: brown;
+}
+
+.proexp {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+
+@media screen and (max-width:480px) {
+    .profilegbodyo {
+        /* justify-content: flex-start;
+        flex-direction: column;
+        align-items: center; */
+        gap: 5vh;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .profileg1lab {
+        padding-left: 12%;
+        font-size: 1.2em;
+    }
+
+    .profileg1val {
+        padding-left: 12%;
+        font-size: 1.3em;
+    }
+
+    .c1 {
+
+        display: flex;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .c1lab {
+        padding-left: 0;
+        font-size: 1.5em;
+    }
+
+    .c1val {
+        padding-left: 0;
+        font-size: 1.7em;
+    }
+
+    .topup {
+        padding: 2% 4% 2% 4%;
+    }
+
+    .cp {
+        padding: 2% 3% 2% 3%;
+    }
+
+    .detdiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .profileg2 {
+        gap: 0;
+        justify-content: space-around !important;
+    }
+
+    .proexp {
+        gap: 4vh;
+        margin-bottom: 10vh;
+    }
+}

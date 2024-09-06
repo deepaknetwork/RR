@@ -1,0 +1,107 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.loginl {
+    width: 100vh;
+    height: 100vh;
+}
+
+.loginr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10vh;
+}
+
+.loginr1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.loginr2 {
+    display: flex;
+    justify-content: center;
+}
+
+.hylink {
+    width: max-content;
+    display: flex;
+    padding-top: 1vh;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.lheadings {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.43);
+    text-shadow: rgba(0, 0, 0, 0.114) 3px 3px 1px;
+}
+
+.logincaro {
+    width: 100vh;
+    height: 100vh;
+}
+
+.loginimg {
+    width: 100vh;
+    height: 100vh;
+}
+
+.lbtn {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 1vh 2vh 1vh 2vh;
+    border-radius: 10px;
+}
+
+.lbtn:hover {
+    background-color: rgb(164, 164, 164);
+    color: rgb(85, 85, 85);
+}
+
+.href {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+.href:hover {
+    color: #0a58ca;
+}
+
+@media screen and (max-width:480px) {
+    .app {
+        display: flex;
+        height: 50vh;
+        width: 45vh;
+        gap: 2vh;
+    }
+
+    .loginl {
+        background-color: aqua;
+        width: 45vh;
+        height: 50vh;
+    }
+
+    .logincaro {
+        width: 45vh;
+        height: 50vh;
+    }
+
+    .loginimg {
+        width: 45vh;
+        height: 50vh;
+    }
+
+    .loginr {
+        padding-bottom: 10vh;
+        gap: 2vh;
+    }
+}

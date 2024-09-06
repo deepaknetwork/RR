@@ -1,0 +1,251 @@
+.rbody {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vh;
+    padding-top: 3vh;
+}
+
+.rheadings {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.43);
+    text-shadow: rgba(0, 0, 0, 0.114) 3px 3px 1px;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.282);
+    padding: 1vh;
+    margin: 1vh;
+    text-align: center;
+    color: white;
+    cursor: default;
+    border-radius: 10px;
+    font-size: 12px;
+    width: fit-content;
+}
+
+.black {
+    /* background-color: rgba(0, 0, 0, 0.254); */
+    background-color: rgba(0, 0, 0, 0.256);
+    padding: 1vh;
+    margin: 1vh;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 12px;
+    width: fit-content;
+}
+
+/* .black:hover{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.323);
+} */
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.calender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 10vh;
+    margin-right: 20vh;
+}
+
+.err {
+    color: brown;
+}
+
+.label1 {
+    font-size: 1.3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.value1 {
+    font-size: 1.4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.condiv1 {
+    padding-left: 7%;
+    display: flex;
+    align-items: center;
+
+}
+
+.condiv12 {
+    display: flex;
+    justify-content: center;
+    padding-left: 7%;
+}
+
+.err {
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 0, 0, 0.612);
+}
+
+.resdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.reserbtn {
+    background-color: rgba(0, 0, 0, 0.256);
+    border: none;
+    padding: 1vh;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: rgba(0, 0, 0, 0.353) 2px 2px 1px;
+}
+
+.reserbtn:hover {
+    background-color: black;
+}
+
+.inp {
+    border: none;
+    border-bottom: 1px black solid;
+    width: fit-content;
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.inp::-webkit-inner-spin-button {
+    display: none;
+}
+
+.inp::-webkit-outer-spin-button {
+    display: none;
+}
+
+.c1r {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c11r {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.condates {
+    display: flex;
+    flex-direction: column;
+}
+
+.modelbody {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    overflow: scroll;
+    max-height: 80vh;
+}
+
+.modelbody::-webkit-scrollbar {
+    width: 7px;
+}
+
+.modelbody::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.258);
+    border-radius: 10px;
+}
+
+.modelhead {
+    font-size: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lab {
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.val {
+    font-size: 1.1em;
+}
+
+.modelbtndiv {
+    display: flex;
+    justify-content: center;
+}
+
+.modelbtn {
+    border: none;
+    padding: 1vh 2vh 1vh 2vh;
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.modelbtn:hover {
+    scale: 1.2;
+    background-color: black;
+}
+
+.modelicon {
+    height: 40px;
+    width: 40px;
+}
+
+.modeldiv {
+    margin-top: 5vh !important;
+}
+
+.not {
+    opacity: 40%;
+    cursor: default;
+}
+
+@media screen and (max-width:480px) {
+    .rbody {
+        padding: 0;
+    }
+
+    .calender {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 0;
+        padding: 0 10px 0 10px;
+    }
+
+    .red {
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .black {
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .value1 {
+        width: 50%;
+    }
+
+    .modeldiv {
+        margin-top: 50%;
+    }
+
+    .rheadings {
+        font-size: 1.5em;
+    }
+
+}
