@@ -41,10 +41,10 @@ export default function Signup() {
       axios.post(`${getBaseUrl()}customer/signup`, { phone: uphone, email: uemail, name: uname, password: upassword })
         .then((res) => {
           console.log(res)
-          alert("clicked")
+          // alert("clicked")
           const error = loginUser(uphone, upassword);
           setTimeout(() => {
-            navigate('/RR');
+            navigate('/RR/');
           }, 1000);
 
         }).catch((err) => {
@@ -63,7 +63,7 @@ export default function Signup() {
         .then((res) => {
           console.log(res)
           const error = loginUser(uphone, upassword);
-          navigate('/RR');
+          window.location.href = "https://deepaknetwork.github.io/RR/";
         }).catch((err) => {
           console.log(err)
           setLoad(false)
@@ -77,7 +77,7 @@ export default function Signup() {
 
   }
   function goHome() {
-    navigate("/RR")
+    navigate("/RR/")
   }
   function goLogin(){
     navigate("/RR/login")
@@ -165,8 +165,8 @@ export default function Signup() {
               Signup
             </button>
             <Form.Group className='hylink'>
-              <a onClick={goHome}>Continue without signing in</a>
-              <a onClick={goLogin}>Already have an account ?</a>
+              <a className='href' onClick={goHome}>Continue without signing in</a>
+              <a className='href' onClick={goLogin}>Already have an account ?</a>
             </Form.Group>
           </Form>
         </div>

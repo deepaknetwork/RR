@@ -14,7 +14,7 @@ export default function AppRouter() {
     return (
         <Router >
             <Routes>
-                <Route path="RR" element={<Home />} />
+                <Route path="RR/" element={<Home />} />
                 <Route path="RR/room/:houseNo/:roomNo" element={<Room />} />
                 {getName() === null && <Route path="RR/login" element={<Login />} />}
                 {getName() === null && <Route path="RR/signup" element={<Signup />} />}
@@ -22,7 +22,7 @@ export default function AppRouter() {
                 {getName() !== null && <Route path="RR/profile" element={getRole() === 'OWNER' ? <ProfileOwner /> : <ProfileGuest />} />}
                 {getRole() === 'OWNER' && <Route path="RR/houses" element={<Houses />} />}
                 {getRole() === 'OWNER' && <Route path="RR/editroom" element={<EditRoom />} />}
-                <Route path="*" element={<Navigate to="RR" />} />
+                <Route path="*" element={<Navigate to="RR/" />} />
             </Routes>
         </Router>
     )

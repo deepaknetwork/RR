@@ -11,7 +11,7 @@ export default function MenuOwner() {
   var nav=useNavigate()
   function handleLogout() {
     removeUserData();
-    nav("/RR/login")
+    window.location.href = "https://deepaknetwork.github.io/RR/";
   }
   return (
     <Navbar key={false} expand={false} className="bg-body-tertiary">

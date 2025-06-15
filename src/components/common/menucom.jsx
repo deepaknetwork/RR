@@ -21,7 +21,7 @@ export default function MenuCommon() {
           <Navbar.Brand>RoomieReserve</Navbar.Brand>
         </div>
         <div className="main1">
-          {<Link className='signa' to={"/RR/login"}>signin</Link>}
+          {<Link className='signa' to="/RR/login">signin</Link>}
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
         </div>
         <Navbar.Offcanvas

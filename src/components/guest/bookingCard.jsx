@@ -49,7 +49,9 @@ export default function BookingCard(prop){
                 <span className='book2val'>{prop.data.rent}</span>
             </div>
         </div>
-            {owner!==""&&<Modal show={show} fullscreen={true}  onHide={() => {window.location.reload()}} >
+            {owner!==""&&<Modal show={show} fullscreen={true}  
+            // onHide={() => {window.location.reload()}}
+             >
             <Modal.Header closeButton >
             <Modal.Title >Booking Id : {prop.data.id}</Modal.Title>
             </Modal.Header>

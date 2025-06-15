@@ -6,12 +6,12 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { getName, removeUserData } from '../../utils/auth';
 import './menuguest.css';
 import { getBaseUrl } from '../../utils/api';
-import { Link, useNavigate } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 export default function MenuGuest() {
   var nav=useNavigate();
   function handleLogout() {
     removeUserData();
-    nav("/RR/login")
+    window.location.href = "https://deepaknetwork.github.io/RR/";
   }
   return (
     <Navbar key={false} expand={false} className="bg-body-tertiary mb-3">
@@ -37,7 +37,7 @@ export default function MenuGuest() {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Link to="/RR/home">Home</Link>
-              <Link to="/RR/booking">My Bookings</Link>
+              <Link to="/RR/booking">Bookings</Link>
               <Link to="/RR/profile">Profile</Link>
               <button className='sbtn logoutbutton' onClick={handleLogout}>Logout</button>
             </Nav>

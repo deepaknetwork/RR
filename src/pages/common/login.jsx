@@ -40,11 +40,11 @@ export default function Login() {
       setshowerr(false)
     }, 3000);
     if (getName() !== null) {
-      navigate('/RR');
+      window.location.href = "https://deepaknetwork.github.io/RR/";
     }
   }
   function goHome() {
-    navigate("/RR")
+    navigate("/RR/")
   }
   function goSignUp(){
     navigate("/RR/signup")
@@ -115,10 +115,10 @@ export default function Login() {
               Login
             </button>
             <Form.Group className='hylink'>
-              <a onClick={goHome}>Continue without signing in</a>
+              <a className='href' onClick={goHome}>Continue without signing in</a>
               {isMail === false && <a className='href' onClick={() => { setMail(true) }}>Sign in with email</a>}
               {isMail === true && <a className='href' onClick={() => { setMail(false) }}>Sign in with phone</a>}
-              <a onClick={goSignUp}>Dont have an account ?</a>
+              <a className='href' onClick={goSignUp}>Dont have an account ?</a>
             </Form.Group>
           </Form>
         </div>
